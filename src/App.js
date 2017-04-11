@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 import { connect } from 'react-redux';
-import thunk from 'redux-thunk';
 import './App.css';
 import Filtro from './components/filtro';
 import Grid from './components/grid';
@@ -12,8 +11,8 @@ class App extends Component {
             <div>
                 <div className="App">
                     <div className="App-header">
-                        <Filtro cliqueBuscar = {  filtro => this.props.dispatch( buscar(filtro)) } />
-                        <Grid   filtro = { this.props.filtro } />
+                        <Filtro cliqueBuscar={  filtro => this.props.dispatch( buscar(filtro)) } />
+                        <Grid   filtro={ this.props.filtro } />
                     </div>
                 </div>
             </div>

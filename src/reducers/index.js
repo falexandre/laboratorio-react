@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import todos from './todos';
+import grid from './grid';
 
 const appReducers = combineReducers({
-    todos
+    grid
 })
 
 export default appReducers;

@@ -1,9 +1,10 @@
 import React from 'react';
 
 const Grid = ({filtro}) => {
-    console.log(filtro);
+    let valorGrid = filtro ? filtro.grid : "Teste";
     return (
         <div>
+            {valorGrid}
         </div>
     );
 }

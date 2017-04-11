@@ -1,5 +1,4 @@
-const todos = (state = "INIT", action) => {
-    console.log(action);
+const grid = (state = "comprar", action) => {
     switch (action.type) {
         case "FILTRANDO":
             state = action.filtro;
@@ -9,4 +8,4 @@ const todos = (state = "INIT", action) => {
     }
 }
 
-export default todos;
+export default grid;

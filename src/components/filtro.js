@@ -6,7 +6,7 @@ class Filtro extends Component {
             <div>
                 <div >
                     <div >
-                        <select ref="operacao">
+                        <select defaultValue="comprar" ref="operacao">
                             <option value="comprar" selected>Comprar</option>
                             <option value="alugar">Alugar</option>
                         </select>

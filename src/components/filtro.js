@@ -3,14 +3,14 @@ import React, {Component} from 'react';
 class Filtro extends Component {
 
     componentDidMount () {
-        $('select').material_select();
+        $('#selectFiltro').material_select();
     }
 
     render() {
         return (
             <div>
                 <div className="input-field col s12" >
-                    <select value="comprar" ref="operacao">
+                    <select id="selectFiltro" value="comprar" ref="operacao">
                         <option value="comprar" selected>Comprar</option>
                         <option value="alugar">Alugar</option>
                     </select>

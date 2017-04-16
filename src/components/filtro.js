@@ -1,19 +1,23 @@
+import $ from 'jquery';
 import React, {Component} from 'react';
-
 class Filtro extends Component {
+
+    componentDidMount () {
+        $('select').material_select();
+    }
+
     render() {
         return (
             <div>
-                <div >
-                    <div >
-                        <select defaultValue="comprar" ref="operacao">
-                            <option value="comprar" selected>Comprar</option>
-                            <option value="alugar">Alugar</option>
-                        </select>
-                    </div>
-                    <button onClick={ () => this.handleClick() }>Buscar</button>
+                <div className="input-field col s12" >
+                    <select value="comprar" ref="operacao">
+                        <option value="comprar" selected>Comprar</option>
+                        <option value="alugar">Alugar</option>
+                    </select>
                 </div>
-
+                <button 
+                className="btn waves-effect waves-light"
+                onClick={() => this.handleClick()}>Buscar</button>
             </div>
         );
     };

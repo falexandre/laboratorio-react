@@ -9,10 +9,17 @@ class App extends Component {
     render() {
         return (
             <div>
-                <div className="App">
-                    <div className="App-header">
-                        <Filtro cliqueBuscar={  filtro => this.props.dispatch( buscar(filtro)) } />
-                        <Grid   filtro={ this.props.filtro } />
+                <nav>
+                    <div className="nav-wrapper grey darken-4">
+                        <a href="#" className="brand-logo center">
+                            <img className="App-logo" src="https://facebook.github.io/react/img/logo.svg" alt="Logo React"/>
+                        </a>
+                    </div>
+                </nav>
+                <div className="container">
+                    <div className="row" style={{marginTop:'50px'}} >
+                        <Filtro cliqueBuscar={filtro => this.props.dispatch(buscar(filtro))} />
+                        <Grid filtro={this.props.filtro} />
                     </div>
                 </div>
             </div>

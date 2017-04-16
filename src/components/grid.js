@@ -19,7 +19,7 @@ const Grid = ({filtro}) => {
     ];
 
     let gridFilter = gridList.filter((value)=>{
-        return value.tipo == valorGrid;
+        return value.tipo === valorGrid;
     });
 
     return (
